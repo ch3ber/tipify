@@ -1,0 +1,148 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f7f7f7;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+header {
+  margin: 20px;
+  border-radius: 20px;
+  background-color: #f79336;
+  padding: 20px;
+  text-align: center;
+  color: white;
+}
+
+h1 {
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+p {
+  font-size: 16px;
+}
+
+main {
+  flex: 1;
+  padding: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+section {
+  background-color: #ffbe7c;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+section h2 {
+  color: #963726;
+}
+
+h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+form {
+  margin-bottom: 20px;
+  color: #a73f2c;
+}
+
+
+label {
+  font-size: 16px;
+  display: block;
+  margin-bottom: 8px;
+}
+
+input[type="number"],
+select {
+  width: 100%;
+  padding: 8px;
+  font-size: 16px;
+  border: 1px solid #d7d7d7;
+  border-radius: 4px;
+}
+
+button {
+  background-color: #dd8c41;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #ebaa69;
+}
+
+#resultados {
+  margin-top: 20px;
+  color: #a73f2c;
+}
+
+#propinaTotal,
+#propinaPorComensal {
+  color: #a73f2c;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+footer {
+  margin: 30px;
+  border-radius: 20px;
+  background-color: #f79336;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Estilos para pantallas pequeñas */
+@media screen and (max-width: 768px) {
+  header {
+    padding: 10px;
+  }
+
+  h1 {
+    font-size: 24px;
+  }
+
+  p {
+    font-size: 14px;
+  }
+
+  section {
+    padding: 10px;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+
+  input[type="number"],
+  select {
+    font-size: 14px;
+  }
+
+  button {
+    font-size: 14px;
+    padding: 8px 16px;
+  }
+
+  #propinaTotal,
+  #propinaPorComensal {
+    font-size: 16px;
+  }
+}

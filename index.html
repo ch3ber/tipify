@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tipify - Tu calculadora de propinas</title>
+  <link rel="stylesheet" href="styles.css">
+  <script>
+  </script>
+</head>
+<body>
+  <header>
+    <h1>Tipify</h1>
+    <p>Tu calculadora de propinas</p>
+  </header>
+
+  <main>
+    <section>
+      <h2>Calculadora de Propinas</h2>
+      <form>
+        <label for="montoTotal">Monto Total:</label>
+        <input type="number" id="montoTotal" name="montoTotal" min="0.01" step="0.01" required>
+
+        <label for="comensales">Número de Comensales:</label>
+        <input type="number" id="comensales" name="comensales" min="1" required>
+
+        <label for="porcentajePropina">Porcentaje de Propina:</label>
+        <select id="porcentajePropina" name="porcentajePropina">
+          <option value="10">10%</option>
+          <option value="15">15%</option>
+          <option value="20">20%</option>
+          <option value="25">25%</option>
+        </select>
+
+        <button type="button" id="calcularPropina">Calcular Propina</button>
+      </form>
+
+      <div id="resultados">
+        <p id="propinaTotal"></p>
+        <p id="propinaPorComensal"></p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2023 Tipify - Todos los derechos reservados</p>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
